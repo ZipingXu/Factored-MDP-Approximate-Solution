@@ -83,12 +83,12 @@ def plot(regret, title = "Random-6-2-dynamic-seed_1", alg = "PSRL"):
 # initiate the parser
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--alg", help="Algorithm to use: psrl, dorl, rmax", default = "psrl")
+parser.add_argument("--alg", help="Algorithms to use: psrl, dorl, rmax", default = "psrl")
 parser.add_argument("-p", help="Type of MDP to solve: circle or threeLeg", default = "circle")
-parser.add_argument("-s", help="Number of state factors", type = int, default = 3)
+parser.add_argument("-s", help="Number of state factors", type = int, default = 4)
 
-parser.add_argument("-t", help="Total horizon", type=int, default = 100)
 parser.add_argument("-n", help="Number of replicate", type = int, default = 20)
+parser.add_argument("-t", help="Numer of steps for each replication", type=int, default = 100)
 
 # Fixed horizon uses the stopping criterion in DORL paper. If it is set False, we use the criterion in Ouyang 2017.
 parser.add_argument("-f", help="Whether to use fixed horizon", type = bool, default = False)
