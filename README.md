@@ -109,5 +109,5 @@ parser.add_argument("-m", help="m for Rmax", type = int, default = 100)
 
 Sample output.
 
-![psrl_threeLeg_4_0.10_0.10_100_0.10_early_acc](Figs/psrl_threeLeg_4_0.10_0.10_100_0.10_early_acc.png)
+![psrl_circle_4_0.10_0.10_100_0.10_early_apx](Figs/psrl_circle_4_0.10_0.10_100_0.10_early_apx.png)
 
