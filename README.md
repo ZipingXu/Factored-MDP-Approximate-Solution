@@ -36,11 +36,11 @@ mdp.r
 
 ### Solving FMDP
 
-We compare three solutions here
+We compare three solutions here:
 
-1. Accurate solution using LP
+1. Accurate solution using LP (Equ (7) in Guestrin 2003)
 2. Approximate solution using single basis function without variable elimination
-3. Approximate solution using single basis function with variable elimination
+3. Approximate solution using single basis function with variable elimination (Figure 5 in Guestrin 2003)
 
 Single basis function approximate value function using single basis funcitons:
 $$
@@ -74,7 +74,11 @@ print(lambda_app1 == lambda_app2)
 
 ## Online Learning using DORL, PSRL and Factored Rmax
 
-Online learning experiments are implemented in ``simple_exp.py``
+Online learning experiments are implemented in ``simple_exp.py``. Three algorithms are implemented:
+
+1. DORL (our method)
+2. PSRL
+3. Factored Rmax
 
 Available hyper-parameters:
 
