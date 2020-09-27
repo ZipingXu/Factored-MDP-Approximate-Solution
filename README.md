@@ -80,6 +80,10 @@ Online learning experiments are implemented in ``simple_exp.py``. Three algorith
 2. PSRL
 3. Factored Rmax
 
+```python
+python simple_exp.py --alg psrl -t 100 -n 5
+```
+
 Available hyper-parameters:
 
 ```python
